@@ -1,43 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+  <head><meta charset="utf-8">
+    <title>practice App</title>
+    <meta property="og:title" content="our menu">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo192.png">
+    <meta property="og:url" content="https://shravani-portfolio.netlify.app/">
+    <meta property="og:discription" content="This is the portofolio of a software developer focused on frontend web development">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="shravani-portfolio">
+    
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <header>
+      <img src="logo192.png" alt="Logo"/>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    </header>
+    <nav>
+      <ul>
+        <li>home </li>
+        <li>About Us</li>
+        <li>Contact us</li>
+      </ul>
+
+    </nav>
+    <main>
+      <h1>Blog</h1>
+      <article>
+        
+        <form method="POST">
+          
+          <style>
+            input:invalid {
+              border: 2px solid red;
+            }
+          </style>
+          <div>
+            <fieldset>
+              <label for="abc">First name:</label> 
+              <input type="text" id="abc" name="Fname" required minlength="5">
+            </fieldset>
+              <fieldset>
+                <label for="def">Last name:</label> 
+              <input type="text" id="def" name="Lname" required minlength="5"> 
+
+              </fieldset>
+              
+
+            
+            <label for="Fname">First name:</label> 
+          <input type="text" id="Fname" name="Fname" required minlength="5"> 
+          <label for="Lname">Last name:</label> 
+          <input type="text" id="Lname" name="Lname" required minlength="5"> 
+  
+          </div>
+          <div>
+            <label for="pwd">Password:</label> 
+            <input type="password" id="pwd" name="pwd" required> 
+          </div>
+          <div>
+            <label for="dob">Date of birth:</label>
+            <input type="date" id="dob" name="date of birth">
+          </div>
+          <div>
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+          </div>
+          <div>
+            <label for="email"> Email: </label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="file">File</label>
+            <input type="file" id="file" name="document" >
+          </div>
+          <div>
+            <input type="hidden" id="custId" name="custId" value="3487">
+          </div>
+          
+          <div>
+            <label for="experience">experience</label>
+            <input type="number" id="experience" name="quantity" min="1" max="5">
+          </div>
+          <div>
+            <label for="salary">Salary</label>
+            <input type="range" id="salary" name="salary" min="1000" max="100000">
+            <input type="reset">
+          </div>
+          <div>
+            <label for="gsearch">Search</label>
+            <input type="search" id="gsearch" name="search" >
+          </div>
+          <div>
+            <label for="time">select a time</label>
+            <input type="time" id="time" name="time" >
+          </div>
+          <div>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" required>
+  
+          </div>
+          <div>
+            <label for="portfolio">profille link</label>
+            <input type="url" id="portfolio" name="portfolio" >
+          </div>
+          <div>
+            <label for="week">select a week::</label>
+            <input type="week" id="week" name="week" >
+          </div>
+          <div>
+            <label for="bdayMonth">Select your birthday month:</label>
+            <input type="month" id="bdayMonth" name="bdayMonth" min="1930-01" max="2031-12">
+          </div>
+          <div>
+            <input type="image" src="logo512.png" alt="Submit" width="48" height="48">
+          </div>
+
+        </form>
+        
+        
+
+      </article>
+      <article>
+        <h2> nachname</h2>
+        <p>Bairi</p>
+
+      </article>
+  <div>
+        <!-- button -->
+
+      <button onclick="alert('Are you sure you want to continue?')"> 
+            <img src="logo512.png" 
+            alt="Submit the form" height="64" width="64">
+      </button> 
+  </div>
+  <div>
+    <!-- checkbox -->
+    <input type="checkbox" id="dog" name="dog" value="Dog">
+    <label for="dog">I like dogs</label>
+    <input type="checkbox" id="cat" name="cat" value="Cat">
+    <label for="cat">I like cats</label>
+
+  </div>
+  <div>
+    <!-- radio button  -->
+    <input type="radio" id="light" name="theme" value="Light"> 
+    <label for="light">Light</label> 
+    <input type="radio" id="dark" name="theme" value="Dark"> 
+    <label for="dark">Dark</label> 
+
+  </div>
+  <div>
+    <!-- form -->
+    <form action="myserver.com" method="POST">
+       <input type="submit" value="Submit" />
+    </form>
+  </div>
+
+
+
+    </main>
+    <footer>
+      <p>copyright</p>
+
+    </footer>
+    
   </body>
 </html>
