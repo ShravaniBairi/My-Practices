@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head><meta charset="utf-8">
+
+    </head>
+    <body>
+        <div>
+            <div>
+                <!-- button -->
+        
+              <button onclick="alert('Are you sure you want to continue?')"> 
+                    <img src="logo512.png" 
+                    alt="Submit the form" height="64" width="64">
+              </button> 
+          </div>
+          <div>
+            <!-- checkbox -->
+            <input type="checkbox" id="dog" name="dog" value="Dog">
+            <label for="dog">I like dogs</label>
+            <input type="checkbox" id="cat" name="cat" value="Cat">
+            <label for="cat">I like cats</label>
+        
+          </div>
+          <div>
+            <!-- radio button  -->
+            <input type="radio" id="light" name="theme" value="Light"> 
+            <label for="light">Light</label> 
+            <input type="radio" id="dark" name="theme" value="Dark"> 
+            <label for="dark">Dark</label> 
+        
+          </div>
+          <div>
+            <!-- form -->
+            <form action="myserver.com" method="POST">
+               <input type="submit" value="Submit" />
+            </form>
+          </div>
+
+        </div>
+        <article>
+        
+            <form method="POST">
+              
+              <style>
+                input:invalid {
+                  border: 2px solid red;
+                }
+              </style>
+              <div>
+                <fieldset>
+                  <label for="abc">First name:</label> 
+                  <input type="text" id="abc" name="Fname" required minlength="5">
+                </fieldset>
+                  <fieldset>
+                    <label for="def">Last name:</label> 
+                  <input type="text" id="def" name="Lname" required minlength="5"> 
+    
+                  </fieldset>
+                  
+    
+                
+                <label for="Fname">First name:</label> 
+              <input type="text" id="Fname" name="Fname" required minlength="5"> 
+              <label for="Lname">Last name:</label> 
+              <input type="text" id="Lname" name="Lname" required minlength="5"> 
+      
+              </div>
+              <div>
+                <label for="pwd">Password:</label> 
+                <input type="password" id="pwd" name="pwd" required> 
+              </div>
+              <div>
+                <label for="dob">Date of birth:</label>
+                <input type="date" id="dob" name="date of birth">
+              </div>
+              <div>
+                <label for="birthdaytime">Birthday (date and time):</label>
+                <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+              </div>
+              <div>
+                <label for="email"> Email: </label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div>
+                <label for="file">File</label>
+                <input type="file" id="file" name="document" >
+              </div>
+              <div>
+                <input type="hidden" id="custId" name="custId" value="3487">
+              </div>
+              
+              <div>
+                <label for="experience">experience</label>
+                <input type="number" id="experience" name="quantity" min="1" max="5">
+              </div>
+              <div>
+                <label for="salary">Salary</label>
+                <input type="range" id="salary" name="salary" min="1000" max="100000">
+                <input type="reset">
+              </div>
+              <div>
+                <label for="gsearch">Search</label>
+                <input type="search" id="gsearch" name="search" >
+              </div>
+              <div>
+                <label for="time">select a time</label>
+                <input type="time" id="time" name="time" >
+              </div>
+              <div>
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" required>
+      
+              </div>
+              <div>
+                <label for="portfolio">profille link</label>
+                <input type="url" id="portfolio" name="portfolio" >
+              </div>
+              <div>
+                <label for="week">select a week::</label>
+                <input type="week" id="week" name="week" >
+              </div>
+              <div>
+                <label for="bdayMonth">Select your birthday month:</label>
+                <input type="month" id="bdayMonth" name="bdayMonth" min="1930-01" max="2031-12">
+              </div>
+              <div>
+                <input type="image" src="logo512.png" alt="Submit" width="48" height="48">
+              </div>
+    
+            </form>
+            
+            
+    
+          </article>
+        
+    </body>
+    <footer>
+
+    </footer>
+</html>
