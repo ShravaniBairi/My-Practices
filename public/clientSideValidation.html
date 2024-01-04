@@ -17,5 +17,50 @@
             </div>
             <button type="submit">Log In</button>
         </form>
+        <form>
+            <div>
+                <!-- date -->
+                <label for="booking_date">Book the date: </label>
+                <input id="booking_date" type="date" name="booking_date">
+            </div>
+            <div>
+                <!-- range -->
+                <label for="booking_table">number of people</label>
+                <input id="booking_table" type="range" name="booking_table" value="4" min="1" max="10" oninput="this.nextElementSibling.value=this.value">
+                <output>4</output>
+            </div>
+            <div>
+                <!-- Dropdown List -->
+                <label for="booking_locations">Locations</label>
+                <input id="booking_locations" name="locations" list="locations">
+                <datalist id="locations">
+                    <option value="DownTown"></option>
+                    <option value="upTown"></option>
+                </datalist>
+            </div>
+        </form>
+
+        <!-- sample form -->
+        <form>
+            <div>
+                <label for="email_address">Email Address</label>
+                <input type="email" id="email_address" name="email_address">
+            </div>
+            <div>
+                <label for="booking_date">Date of Booking</label>
+                <input type="date" id="booking_date" name="booking_date">   
+            </div>
+            <div>
+                <label for="people">Number of people</label>
+                <input type="number" id="people" min="1" max="8" name="people">        
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" id="agree" name="agree" required> 
+                    I agree to the cancellation policy
+                </label>
+            </div>
+            <button type="submit">Book Now</button>
+        </form>
     </body>
 </html>

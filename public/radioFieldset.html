@@ -31,6 +31,33 @@
         <button type="submit">Book Tables</button>
 
     </form>
+    <!-- video and audio 
+            -> controls attribute to control the video and audio (pause, play)
+            -> mute attribute to mute the video and audio initially
+
+    
+    -->
+    <video controls  muted width="320" height="240">
+        <source src="video.mp4" type="video/mp4">
+    
+      </video>
+      <form>
+        <div>
+          <label for="rating"> rating
+          </label>
+          <input id="rating" type="range" name="rating" min=1 max="5" list="ratings">
+          <datalist id="ratings">
+            <option value="1" label="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5" label="5"></option>
+          </datalist>
+        </div>
+        <button type="submit"> Submit Rating</button>
+        
+    
+      </form>
 </body>
 
 </html>
